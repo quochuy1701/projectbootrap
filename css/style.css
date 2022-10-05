@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Jost', sans-serif;
+    color: #696969;
+    background-color: #fff;
+}
+header{
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color:#fff;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+.header__container{
+    max-width: 1200px;
+    margin: auto;
+}
+.navbar h1 a{
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:#189a46;
+}
+.navbar-nav .active .nav1{
+    color:#189a46;
+}
+.nav-item .nav-link{
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    position: relative;
+    color: #000c04;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-nav{
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+#myBody{
+    background-color:black;
+  }
+#switchButton{
+    background-color: white;
+  }
+#switchButton .la-sun{
+    display: none;
+  }
+#switchButton .fa-moon{
+    display: block;
+  }
+  /* Dark Theme*/
+.dark#myBody{
+    background-color:white;
+}
+.dark #switchButton{
+    background-color: black;
+}
+.dark #switchButton .la-sun{
+    display: block;
+    color: white;
+} 
+.dark #switchButton .fa-moon{
+    display: none;
+}
+.dark .header__content{
+    background-color: black;
+    color: white;
+}
+  
+
