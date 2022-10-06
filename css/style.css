@@ -1,89 +1,290 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     font-family: 'Jost', sans-serif;
     color: #696969;
     background-color: #fff;
 }
-header{
+
+/* header  */
+header {
     position: fixed;
     top: 40px;
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color:#fff;
+    background-color: #fff;
     transition: all 0.4s ease 0s;
     height: 90px;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
-.header__container{
+
+.header__container {
     max-width: 1200px;
     margin: auto;
 }
+
 .navbar h1 a{
     font-size: 34px;
     font-weight: 600;
     text-transform: capitalize;
-    color:#189a46;
+    color: #189a46;
 }
 .navbar-nav .active .nav1{
-    color:#189a46;
+    color: #189a46;
 }
 .nav-item .nav-link{
     text-transform: capitalize;
     transition: all 0.5s ease;
-    padding: 14px 0;
+    padding: 14px;
+    margin-right: 10px;
     font-size: 1.2em;
     font-weight: 400;
     position: relative;
     color: #000c04;
 }
-.navbar{
+.navbar {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }
-#myBody{
-    background-color:black;
-  }
-#switchButton{
+
+#myBody {
+    background-color: black;
+}
+
+#switchButton {
     background-color: white;
-  }
-#switchButton .la-sun{
-    display: none;
-  }
-#switchButton .fa-moon{
-    display: block;
-  }
-  /* Dark Theme*/
-.dark#myBody{
-    background-color:white;
 }
-.dark #switchButton{
-    background-color: black;
-}
-.dark #switchButton .la-sun{
-    display: block;
-    color: white;
-} 
-.dark #switchButton .fa-moon{
+
+#switchButton .gg-sun {
     display: none;
 }
-.dark .header__content{
+
+#switchButton .gg-moon {
+    display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+    background-color: white;
+}
+
+.dark #switchButton {
+    background-color: black;
+}
+
+.dark #switchButton .gg-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .gg-moon {
+    display: none;
+}
+
+.dark .header__content {
     background-color: black;
     color: white;
 }
-  
+
+.icon {
+    float: right;
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    width: 90px;
+    z-index: 99999;
+    text-align: center;
+}
+
+.icon i {
+    background: #0D1326;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e6ebff;
+    border-radius: 50px;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.icon3 {
+    display: flex;
+    align-items: center;
+}
+
+.icon2 input {
+    display: none;
+}
+
+.icon2 {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    margin: 0;
+}
+
+.btn .gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(1);
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+    border-radius: 50%;
+}
+
+.gg-sun {
+    position: relative;
+    transform: scale(1);
+    height: 24px;
+    background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+    width: 24px;
+}
+
+.gg-sun::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 24px;
+}
+
+.gg-sun::after {
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px;
+    width: 24px;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    bottom: 13px;
+    transition: all .5s;
+    background-color: #189a46;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #189a46;
+}
+
+/* carousel  */
+.slider img {
+    object-fit: cover;
+    height: 100vh;
+}
+.slider {
+    position: relative;
+    z-index: 0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #0c0c0c;
+    opacity: .6;
+}
+
+.carousel-caption h5 {
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.carousel-caption p{
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 30px;
+    opacity: 0.9
+}
+.slider .carousel-caption .btn{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
+.slider .carousel-caption .btn1{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #189a46
+}
+.slider .carousel-caption .btn2{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.carousel{
+    position: relative;
+}
+.slider .carousel-caption{
+    position: absolute;
+    left: 20px;
+    right: 55%;
+}
+
 
