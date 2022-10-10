@@ -10,7 +10,6 @@ body {
     color: #696969;
     background-color: #fff;
 }
-
 /* header  */
 header {
     background-color: #fff;
@@ -149,6 +148,24 @@ header {
     position: relative;
     width: 60px;
     margin: 0;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
 }
 .btn .gg-moon {
     overflow: hidden;
@@ -672,4 +689,188 @@ a.Read {
     margin-top: 10px;
     opacity: 0.8;
     font-weight: 400;
+}
+
+/*! pricing */
+.sub-title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: red;
+  }
+  .hny-title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+  }
+  .hny-title span{
+    font-weight: 100;
+  }
+.w3l-pricing-7-main{
+    background:rgb(249, 247, 254,1);
+}
+.w3l-pricing-7-main h3.heading{
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+.w3l-pricing-7-main .pricing-sec-7{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5% auto;
+    margin-top: 0;
+    width: 90%;
+}
+.w3l-pricing-7-main ul.links{
+    min-height: 120px;
+}
+.w3l-pricing-7-bottom{
+    text-align: center;
+    padding: 1em;
+}
+.w3l-pricing-7-top{
+    text-align: center;
+}
+.w3l-pricing-7-main h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: #189A46;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 10px;
+}
+.w3l-pricing-7-main .pricing-gd-left.active h6,
+.w3l-pricing-7-main .pricing-gd-left.active h4{
+  color: white;
+}
+.w3l-pricing-7-main .pricing-gd-left.active h4 span{
+    color: #eee;
+}
+.w3l-pricing-7-main h6{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.pricing-gd-left.pric-7.active .btn-style{
+    color: white;
+    background-color: #189A46;
+}
+.w3l-pricing-7-main p.para {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.pricing-gd-left.pric-7.active p.para{
+    color: #eee;
+}
+.w3l-pricing-7-main h4 label{
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.w3l-pricing-7-main h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189A46;
+}
+.w3l-pricing-7-main h4 span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.w3l-pricing-7-main p.lists{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+}
+.w3l-pricing-7-main ul.links li{
+    list-style: none;
+    margin-bottom: 5px;
+    color:#304659;
+}
+.w3l-pricing-7-main .pricing-gd-left{
+    background: white;
+    border-radius: 6px;
+    align-self: center;
+}
+.pricing-gd-left.pric-7.active .w3l-pricing-7-top{
+    padding: 3em 2.5em 0.5em;
+    background: #189A46;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.pricing-gd-left.pric-7.active .w3l-pricing-7-bottom{
+    padding: 2em 2.5em 3.5em;
+}
+.w3l-pricing-7-main .pric-7-1 .w3l-pricing-7{
+    padding: 3.5em 2.5em;
+    border-right: 0;
+}
+.w3l-pricing-7-main .pric-7-2 .w3l-pricing-7{
+    padding: 3.5em 2.5em;
+    border-left: 0;
+}
+.w3l-pricing-7-main .pricing-gd-left.active{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    z-index: 1;
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    border-radius: 6px;
+}
+.w3l-pricing-7-main .buy-button{
+    margin-top: 2em;
+}
+.w3l-pricing-7-main .copy-right p{
+    color: #ccc;
+    font-size: 17px;
+}
+.w3l-pricing-7-main .copy-right p a{
+    color: white;
+}
+.w3l-pricing-7-main .copy-right p a:hover{
+    color: #189A46;
+}
+.buy-button .btn-primary{
+    color: white;
+    background-color: #189A46;
+    border-color: #189A46;
+  }
+  .buy-button .btn-primary:hover{
+    color: white;
+    background-color:#116E32;
+    border-color:#116E32;
+  }
+  .buy-button a:hover{
+    text-decoration: none;
+  }
+/* button style */
+.buy-button .btn-style{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 10px;
 }
